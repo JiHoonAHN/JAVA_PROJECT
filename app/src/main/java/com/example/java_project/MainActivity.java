@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
        String serviceUrl="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
        String servicekey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
 
-       String strUrl = serviceUrl + "?Servicekey=" + servicekey+"&strSrch="+strSrch;
+       String strUrl = serviceUrl + "?servicekey=" + servicekey+"&strSrch="+strSrch;
 
         DownloadWebContent dwc1 = new DownloadWebContent();
         dwc1.execute(strUrl);
