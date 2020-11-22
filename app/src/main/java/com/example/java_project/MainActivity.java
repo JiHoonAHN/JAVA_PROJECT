@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         busNumer = (TextView) findViewById(R.id.bus);
 
        String serviceUrl="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-       String servicekey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+       String servicekey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
 
        String strUrl = serviceUrl + "?servicekey=" + servicekey+"&strSrch="+strSrch;
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getStaionByRoute";
 
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
         String strUrl = serviceUrl +"?ServiceKey="+serviceKey+"&busRoutedId"+busRouteId;
 
         DownloadWebContent2 dwc2 =new DownloadWebContent2();
@@ -245,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
     public void plusBusNumber(View v){
         busNum +=1;
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
         strSrch = busNum+"";
         String strUrl = serviceUrl + "?ServiceKey:"+serviceKey+"&strSrch="+strSrch;
         DownloadWebContent dwc1 = new DownloadWebContent();
@@ -258,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
     public void minusBusNumber(View v){
         busNum -=1;
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
         strSrch = busNum+"";
         String strUrl = serviceUrl + "?ServiceKey:"+serviceKey+"&strSrch="+strSrch;
         DownloadWebContent dwc1 = new DownloadWebContent();
@@ -271,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
     public void resetCurrentBus(View v){
         //busNum+=1;
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
         strSrch = busNum + "";
 
         String strUrl =serviceUrl+"?ServiceKey="+serviceKey+"&strSrch="+strSrch;
@@ -285,7 +285,7 @@ public class MainActivity extends AppCompatActivity {
     public void plusBaek(View v){
         busNum +=100;
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
         strSrch = busNum+"";
         String strUrl = serviceUrl + "?ServiceKey:"+serviceKey+"&strSrch="+strSrch;
         DownloadWebContent dwc1 = new DownloadWebContent();
@@ -298,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
     public void minusBaek(View v){
         busNum-=100;
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
-        String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
+        String serviceKey = "XHyDBzklqBcek%2FBxTr9eaa6Z0pNJ7a8OcwEkeu87UEeBlSPonozGJm4qZkiPflZZFNhaYHur6lvvbfyHU1uSRQ%3D%3D";
 
         String strUrl = serviceUrl + "?ServiceKey=" +serviceKey+"&strSrch="+strSrch;
         DownloadWebContent dwc1 = new DownloadWebContent();
