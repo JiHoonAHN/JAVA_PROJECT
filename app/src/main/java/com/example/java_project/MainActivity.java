@@ -269,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void resetCurrentBus(View v){
         //busNum+=1;
+        busNum = 0;
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         strSrch = busNum + "";
@@ -306,4 +307,3 @@ public class MainActivity extends AppCompatActivity {
         busNumer.append(strSrch+"\n");
     }
 }
-
