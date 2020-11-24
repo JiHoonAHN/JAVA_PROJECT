@@ -243,6 +243,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void plusBusNumber(View v){
         busNum +=1;
+        if (busNum>=0){
+            busNum =500;
+        }
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         strSrch = busNum+"";
@@ -256,6 +259,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void minusBusNumber(View v){
         busNum -=1;
+        if (busNum<0){
+            busNum =0;
+        }
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         strSrch = busNum+"";
@@ -270,6 +276,7 @@ public class MainActivity extends AppCompatActivity {
     public void resetCurrentBus(View v){
         //busNum+=1;
         busNum = 0;
+
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         strSrch = busNum + "";
@@ -283,6 +290,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void plusBaek(View v){
         busNum +=100;
+        if (busNum>=500){
+            busNum =500;
+        }
         String serviceUrl ="http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         strSrch = busNum+"";
@@ -296,6 +306,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void minusBaek(View v){
         busNum-=100;
+        if (busNum<0){
+            busNum =0;
+        }
         String serviceUrl = "http://ws.bus.go.kr/api/rest/busRouteInfo/getBusRouteList";
         String serviceKey = "WnLDkWzdUltg%2F7esKc3FoI5iNQX7ld2lbsAxUObSxR1310NMP89P1Q53TEappGM5PBHYbFirgrruIA4UuaHfDA%3D%3D";
         String strUrl = serviceUrl + "?ServiceKey=" +serviceKey+"&strSrch="+strSrch;
